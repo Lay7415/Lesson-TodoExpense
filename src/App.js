@@ -36,6 +36,7 @@ function App() {
     console.log(expense);
 
     setExpenses( prevExpenses => {
+      console.log(prevExpenses)
       return [expense, ...prevExpenses]
     })
   }

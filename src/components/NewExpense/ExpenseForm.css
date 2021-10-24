@@ -5,7 +5,9 @@
     margin-bottom: 1rem;
     text-align: left;
 }
-
+.no-active {
+    display: none;
+}
 .new-expense__control label {
     font-weight: bold;
     margin-bottom: 0.5rem;

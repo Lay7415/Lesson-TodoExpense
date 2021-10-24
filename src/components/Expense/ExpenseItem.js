@@ -3,7 +3,6 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../../UI/Card';
 
 function ExpenseItem(props) {
-    // console.log(props)
     let expenseTitle = props.title;
     let expenseAmount = props.amount;
 

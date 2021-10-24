@@ -19,7 +19,10 @@
     border-radius: 12px;
     margin-right: 1rem;
 }
-
+.btn-openAndClose{
+    display: flex;
+    justify-content: center;
+}
 .new-expense button:hover, .new-expense button:active {
     background-color: #510674;
     border-color: #510674;

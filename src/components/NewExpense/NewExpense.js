@@ -5,6 +5,7 @@ import './NewExpense.css';
 //it's not a wrapper component
 const NewExpense = (props) => {
     //lifting up method
+    const [active,setActive] = useState(false)
     const saveExpenseDataHundler = (enteredExpenseData) => {
         // console.log(enteredExpenseData);
         const expenseData = {
@@ -16,7 +17,15 @@ const NewExpense = (props) => {
     }
 
     return <div className='new-expense'>
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHundler} />
+        <div className="btn-openAndClose">
+            <button onClick = {(e) => {
+                setActive(true)
+            }}>addNewExpense</button>
+            <button onClick = {(e) => {
+                setActive(false)
+            }}>closeForm</button>
+        </div> 
+        <ExpenseForm active={active} onSaveExpenseData={saveExpenseDataHundler} />
     </div>
 }
 
