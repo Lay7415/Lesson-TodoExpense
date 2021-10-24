@@ -17,14 +17,7 @@ const NewExpense = (props) => {
     }
 
     return <div className='new-expense'>
-        <div className="btn-openAndClose">
-            <button onClick = {(e) => {
-                setActive(true)
-            }}>addNewExpense</button>
-            <button onClick = {(e) => {
-                setActive(false)
-            }}>closeForm</button>
-        </div> 
+        git
         <ExpenseForm active={active} onSaveExpenseData={saveExpenseDataHundler} />
     </div>
 }
